@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		20D451761FF97C9100E5C126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D451751FF97C9100E5C126 /* AppDelegate.swift */; };
-		20D451781FF97C9100E5C126 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D451771FF97C9100E5C126 /* ViewController.swift */; };
 		20D4517B1FF97C9100E5C126 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D451791FF97C9100E5C126 /* Main.storyboard */; };
 		20D4517E1FF97C9100E5C126 /* Soundboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20D4517C1FF97C9100E5C126 /* Soundboard.xcdatamodeld */; };
 		20D451801FF97C9100E5C126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D4517F1FF97C9100E5C126 /* Assets.xcassets */; };
 		20D451831FF97C9100E5C126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D451811FF97C9100E5C126 /* LaunchScreen.storyboard */; };
+		20D4518B1FF97E2700E5C126 /* SoundboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D4518A1FF97E2700E5C126 /* SoundboardTableViewController.swift */; };
+		20D4518D1FF97E7500E5C126 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D4518C1FF97E7500E5C126 /* RecordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		20D451721FF97C9100E5C126 /* Soundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D451751FF97C9100E5C126 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20D451771FF97C9100E5C126 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20D4517A1FF97C9100E5C126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20D4517D1FF97C9100E5C126 /* Soundboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Soundboard.xcdatamodel; sourceTree = "<group>"; };
 		20D4517F1FF97C9100E5C126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20D451821FF97C9100E5C126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20D451841FF97C9100E5C126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D4518A1FF97E2700E5C126 /* SoundboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundboardTableViewController.swift; sourceTree = "<group>"; };
+		20D4518C1FF97E7500E5C126 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				20D451751FF97C9100E5C126 /* AppDelegate.swift */,
-				20D451771FF97C9100E5C126 /* ViewController.swift */,
+				20D4518A1FF97E2700E5C126 /* SoundboardTableViewController.swift */,
+				20D4518C1FF97E7500E5C126 /* RecordViewController.swift */,
 				20D451791FF97C9100E5C126 /* Main.storyboard */,
 				20D4517F1FF97C9100E5C126 /* Assets.xcassets */,
 				20D451811FF97C9100E5C126 /* LaunchScreen.storyboard */,
@@ -139,9 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20D451781FF97C9100E5C126 /* ViewController.swift in Sources */,
 				20D4517E1FF97C9100E5C126 /* Soundboard.xcdatamodeld in Sources */,
 				20D451761FF97C9100E5C126 /* AppDelegate.swift in Sources */,
+				20D4518B1FF97E2700E5C126 /* SoundboardTableViewController.swift in Sources */,
+				20D4518D1FF97E7500E5C126 /* RecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
