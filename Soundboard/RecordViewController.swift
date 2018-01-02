@@ -49,6 +49,9 @@ class RecordViewController: UIViewController {
                 
             }
         }
+        playButton.isEnabled = false
+        nameTextField.isEnabled = false
+        addButton.isEnabled = false
     }
     
     @IBAction func recordTapped(_ sender: Any) {
@@ -58,9 +61,15 @@ class RecordViewController: UIViewController {
             if audioRecorder.isRecording {
                 audioRecorder.stop()
                 recordButton.setTitle("Record", for: .normal)
+                playButton.isEnabled = true
+                nameTextField.isEnabled = true
+                addButton.isEnabled = true
             } else {
                 audioRecorder.record()
                 recordButton.setTitle("Stop", for: .normal)
+                playButton.isEnabled = false
+                nameTextField.isEnabled = false
+                addButton.isEnabled = false
             }
 
         }
