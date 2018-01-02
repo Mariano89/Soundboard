@@ -17,6 +17,8 @@ class RecordViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     
     var audioRecorder : AVAudioRecorder?
+    var audioPlayer : AVAudioPlayer?
+    var audioURL : URL?
     
 
     override func viewDidLoad() {
@@ -35,6 +37,7 @@ class RecordViewController: UIViewController {
             
             if let audioURL = NSURL.fileURL(withPathComponents: pathComponents) {
                 // Create some settings
+                self.audioURL = audioURL
                 var settings : [String:Any] = [:]
                 settings[AVFormatIDKey] = Int(kAudioFormatMPEG4AAC)
                 settings[AVSampleRateKey] = 44100.0
@@ -64,6 +67,10 @@ class RecordViewController: UIViewController {
         
     }
     @IBAction func playTapped(_ sender: Any) {
+        if let audioURL = self.audioURL {
+            audioPlayer = try? AVAudioPlayer(contentsOf: audioURL)
+            audioPlayer?.play()
+        }
     }
     @IBAction func addTapped(_ sender: Any) {
     }
